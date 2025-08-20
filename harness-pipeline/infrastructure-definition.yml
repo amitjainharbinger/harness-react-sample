@@ -8,7 +8,7 @@ infrastructureDefinition:
   type: S3
   spec:
     connectorRef: aws-connector
-    region: us-east-1
+    region: <+variables.awsRegion>
     bucketName: <+variables.bucketName>
-    prefix: <+variables.prefix>
+    prefix: app/
     enableCD: true
